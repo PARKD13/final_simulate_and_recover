@@ -3,7 +3,7 @@ import pandas as pd
 import time
 import os
 import sys
-from src.ez_diffusion import EZDiffusion
+from ez_diffusion import EZDiffusion
 
 class SimulationResult:
     def __init__(self, state_history, time_steps):

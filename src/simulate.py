@@ -1,7 +1,11 @@
 import numpy as np
 import pandas as pd
 import time
-from ez_diffusion import EZDiffusion
+import os
+import sys
+from src.ez_diffusion import EZDiffusion
+
+print(sys.path)
 
 class SimulationResult:
     def __init__(self, state_history, time_steps):
@@ -119,6 +123,11 @@ def run_simulation(n_iterations=1000, sample_sizes=[10, 40, 4000]):
     results = runner.run_simulations()
     summary = runner.analyze_results(results)
     
+
+    # Ensure the directory exists
+    if not os.path.exists('results'):
+        os.makedirs('results')
+
     # Save results to CSV as well
     results.to_csv('results/results.csv', index=False)
     summary.to_csv('results/summary.csv', index=False)

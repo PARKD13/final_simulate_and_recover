@@ -37,11 +37,6 @@ class EZDiffusion:
             
         return drift_rate
 
-
-
-    
-
-    
     def inverse_boundary(self, accuracy, drift_rate):
         # Handle edge cases
         if accuracy <= 0.5:

@@ -6,4 +6,4 @@ While improvements in parameter recovery continue with larger sample sizes, the 
 
 In conclusion, the simulation and recovery exercise emphasizes the statistical properties of parameter recovery methods when applying computational models to empirical data. Our results emphasize the need for caution especially when interpreting results from small samples and suggest that systematic corrections are necessary to address known biases in parameter estimation. However, we also realized that samples can never be ideal or perfect even in great numbers, which reveals the limitations of sampling. Using confidence intervals instead of point estimates, is a solution to be more careful in interpreting results. Researchers must be critical in how they come to their conclusions, and be humble in their results, as samples will never provide perfect inference to the population. Nevertheless statistical inference with synthetic data is still an effective and important tool to know more about populations in the world with ease, and it has numerous implications for the hopeful benefit of our society. 
 
-
+DISCLAIMER: AI helped create my code

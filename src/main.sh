@@ -6,21 +6,6 @@ echo ""
 # Specify the Python interpreter version
 PYTHON_CMD="python3.12"
 
-# Verify Python version
-$PYTHON_CMD --version
-if [ $? -ne 0 ]; then
-    echo "Error: Python 3.12.3 is not available as 'python3.12'. Trying alternative methods..."
-    
-    # Try python3 with version check
-    if python3 --version | grep -q "Python 3.12"; then
-        PYTHON_CMD="python3"
-        echo "Using $PYTHON_CMD instead."
-    else
-        echo "Error: Python 3.12.3 is not found. Please install it or update your PATH."
-        exit 1
-    fi
-fi
-
 # Create a results directory if it doesn't exist
 mkdir -p results
 

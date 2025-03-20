@@ -1,5 +1,5 @@
 echo "Starting EZ Diffusion Model Simulate-and-Recover Exercise"
-echo "=========================================================="
+echo ""
 echo "This will run 1000 iterations for each of the three sample sizes: 10, 40, and 4000"
 echo "Total: 3000 iterations"
 echo ""

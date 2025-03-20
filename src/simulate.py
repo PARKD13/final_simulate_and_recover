@@ -5,8 +5,6 @@ import os
 import sys
 from src.ez_diffusion import EZDiffusion
 
-print(sys.path)
-
 class SimulationResult:
     def __init__(self, state_history, time_steps):
         self.state_history = state_history

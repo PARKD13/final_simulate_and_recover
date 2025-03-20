@@ -1,5 +1,5 @@
 echo "Running EZ Diffusion Model Test Suite"
-echo "===================================="
+echo ""
 
 # Run tests explicitly with Python 3
 python3 -m unittest test.test_ez_diffusion

@@ -3,7 +3,6 @@ import numpy as np
 from src.ez_diffusion import EZDiffusion
 
 
-
 class TestEZDiffusion(unittest.TestCase):
     
     def setUp(self):

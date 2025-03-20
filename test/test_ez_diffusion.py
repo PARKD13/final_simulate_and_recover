@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from ez_diffusion import EZDiffusion
+from src.ez_diffusion import EZDiffusion
 
 
 class TestEZDiffusion(unittest.TestCase):

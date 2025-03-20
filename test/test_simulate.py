@@ -2,7 +2,7 @@ import unittest
 import numpy as np
 import pandas as pd
 from src.simulate import SimulationRunner
-from src.ez_diffusion import EZDiffusion
+from final_simulate_and_recover.src.ez_diffusion import EZDiffusion
 
 class TestSimulationRunner(unittest.TestCase):
     

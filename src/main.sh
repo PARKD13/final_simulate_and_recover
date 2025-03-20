@@ -1,7 +1,6 @@
 echo "Starting EZ Diffusion Model Simulate-and-Recover Exercise"
 echo ""
 echo "This will run 1000 iterations for each of the three sample sizes: 10, 40, and 4000"
-echo "Total: 3000 iterations"
 echo ""
 
 # Specify the Python interpreter version
@@ -69,14 +68,12 @@ for n in [10, 40, 4000]:
     
     # Write to file in the results directory
     with open(f'results/results_N{n}.txt', 'w') as f:
-        f.write(f'N={n}\\n')
-        f.write(f'Biases (v, a, t): [{drift_bias:.8f} {boundary_bias:.8f} {nondecision_bias:.8f}]\\n')
-        f.write(f'Squared Errors (v, a, t): [{drift_se:.8f} {boundary_se:.8f} {nondecision_se:.8f}]\\n')
+        f.write(f'Sample size={n}\\n')
+        f.write(f'Biases (v, a, t): [{drift_bias:.6f} {boundary_bias:.6f} {nondecision_bias:.6f}]\\n')
+        f.write(f'Squared Errors (v, a, t): [{drift_se:.6f} {boundary_se:.6f} {nondecision_se:.6f}]\\n')
 
-print('\\nResults have been saved to the results directory.')
 "
 
 echo ""
 echo "Simulate-and-recover exercise completed."
-echo "See the output above for a summary of the results."
-echo "Detailed results have been saved to the results directory."
+echo "Check results directory to see simulation results"
